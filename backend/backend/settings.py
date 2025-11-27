@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-eid#9+n^ccc7^q)@qe)0_!$)%!iv3t77=^egmc^7fcsax+jk89
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["project.rayi.in", "127.0.0.1", "localhost"]
 
 
 # Application definition
