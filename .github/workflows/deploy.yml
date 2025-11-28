@@ -33,7 +33,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           # Navigate to project directory
-          cd /path/to/your/project
+          cd /home/rayi/santo-git/santo-git
           
           # Pull latest changes
           git pull origin main
@@ -44,7 +44,7 @@ jobs:
           pip install -r requirements.txt
           python manage.py migrate
           python manage.py collectstatic --noinput
-          sudo systemctl restart gunicorn
+          sudo systemctl restart gunicorn-santo
           
           # Frontend Setup
           cd ../frontend
